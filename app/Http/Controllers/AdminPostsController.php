@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Post;
 use App\Http\Requests;
-
+use App\Post;
 class AdminPostsController extends Controller
 {
     public function index()
@@ -34,4 +34,6 @@ class AdminPostsController extends Controller
     Post::create($request->all());
         return redirect()->route('admin.posts.index');
     }
+
+
 }
