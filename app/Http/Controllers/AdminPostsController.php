@@ -28,8 +28,10 @@ class AdminPostsController extends Controller
         return view('admin.posts.edit', $data);
     }
 
-public function store()
-{
-}
+    public function store(Request $request)
+    {
 
+    Post::create($request->all());
+
+    }
 }
