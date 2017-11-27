@@ -42,4 +42,7 @@ class AdminPostsController extends Controller
     return redirect()->route('admin.posts.index');
     }
 
+  
+
+
 }
